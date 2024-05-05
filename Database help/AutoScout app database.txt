@@ -1,0 +1,48 @@
+AutoScout app database
+
+Welke tabellen?
+
+Brand -> Audi
+Model -> a3
+User
+Vehicles
+
+Wat zit er in de tabellen?
+Brand:
+Id
+Naam
+
+Model:
+Id
+MerkId
+Naam
+
+User:
+Id
+Voornaam
+Achternaam
+Email
+Telefoonnummer (nullable)
+
+Vehicle:
+Id
+MerkId
+ModelId
+UserId
+Prijs
+
+
+Relaties:
+
+Brand has many Models
+Model belongs to Brand
+
+
+User has many Vehicles
+Vehicle belongs to User
+
+Vehicle belongs to Brand
+Brand has many Vehicles
+
+Vehicle belongs to Model
+Model has many Vehicles
